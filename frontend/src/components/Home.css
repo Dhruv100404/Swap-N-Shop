@@ -1,0 +1,42 @@
+.navbar-nav .nav-link {
+	padding-left: .5rem;
+}
+.navbar-nav a {
+	justify-content: space-evenly;
+	color: black;
+	transition: all ease 0.5s;
+}
+.navbar-nav a:hover,
+.navbar-nav a:focus,
+.navbar-nav a:active,
+.navbar-nav a.hilite {
+	color: #BFBFBF;
+	background: black;
+	border-bottom: 1px black solid;
+}
+/* In your CSS file */
+.product-card.sold-out {
+    /* Styles for sold products */
+    border: 1px solid red; /* Example: You can modify this based on your design */
+    /* Add other styles to visually indicate the product is sold */
+}
+
+.sold-out-label {
+    color: red; /* Example: You can modify this based on your design */
+    font-weight: bold;
+}
+
+/* ===== == = === 48em (768px) === = == ===== */
+@media only screen and (min-width : 48em) {
+	.navbar-nav a:hover,
+	.navbar-nav a:focus,
+	.navbar-nav a:active,
+	.navbar-nav a.hilite {
+		transform: translateY(0.5rem) scaleY(1.2);
+	}
+	.navbar-nav .nav-link {
+		padding-left: 0;
+	}
+	
+}
+

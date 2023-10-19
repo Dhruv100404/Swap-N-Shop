@@ -1,0 +1,61 @@
+/* Bargain.css */
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.product-image {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.offer-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.offer-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.offer-slider {
+    flex: 1;
+}

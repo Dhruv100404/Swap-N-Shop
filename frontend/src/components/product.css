@@ -1,0 +1,109 @@
+.con {
+    min-height: 100vh;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: left;
+    justify-items: center;
+    gap: 20px;
+    grid-template-columns: 33vw 33vw 33vw;
+    /*background: linear-gradient(to right, #000000, #f8f8f8); */
+}
+.no-products-message {
+    font-size: 28px;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    max-height: 80px;
+    width: 100%;
+}
+
+/* Style for the product card container */
+.product-card {
+    width: 300px;
+    max-height: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the product image */
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the product details */
+.product-details {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for the product title */
+.product-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for the product price */
+.product-price {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Style for the "Add to Cart" button */
+.add-to-cart-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-content: space-between;
+}
+
+.add-to-cart-button:hover {
+    background-color: #f98c39;
+}
+
+/* Media Query for tablet screens */
+@media screen and (max-width: 768px) {
+    .product-card {
+        max-width: 100%; /* Take full width on tablet screens */
+        margin: 10px; /* Reduce margin for better spacing */
+    }
+}
+
+/* Media Query for phone screens */
+@media screen and (max-width: 480px) {
+    .product-card {
+        max-width: 100%; /* Take full width on phone screens */
+        margin: 10px; /* Reduce margin for better spacing */
+    }
+}
+
+
+/* Media Query for tablet screens */
+@media screen and (max-width: 768px) {
+    .con {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 10px;
+    }
+}
+
+/* Media Query for phone screens */
+@media screen and (max-width: 480px) {
+    .con {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+        gap: 10px;
+    }
+}
