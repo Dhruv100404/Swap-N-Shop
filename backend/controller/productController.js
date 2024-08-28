@@ -8,7 +8,7 @@ import nodemailer from "nodemailer";
 var smtpConfig = {
     service: "gmail",
     // use SSL
-    auth: { user: "21ceuos020@ddu.ac.in", pass: "Dhruv@104" },
+    auth: { user: "21ceuos020@ddu.ac.in", pass: "*******" },
 };
 const transporter = nodemailer.createTransport(smtpConfig);
 
